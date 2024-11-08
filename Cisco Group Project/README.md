@@ -1,34 +1,24 @@
-# linux_client_server
-Linux Server and Workstation Setup for a Local Library
-# Linux Client-Server Setup for Local Library
+Network Design and Architecture - Summary
+This report presents the design and implementation of a secure, efficient, and scalable network for a client relocating to a new office. The network infrastructure was tailored to meet the specific needs of the client’s departments, including Management, Study, Production, and Support. The design ensures robust security, performance optimization, and cost-effectiveness while allowing room for future scalability. The network design was simulated using Cisco Packet Tracer and the key components include VLAN segmentation, inter-VLAN routing, centralized IP management with DHCP, and RADIUS-based authentication for security.
 
-## Project Overview
-This project sets up a Linux-based server and workstation infrastructure for a local library, providing essential network services and demonstrating cost-effective alternatives to a Windows-based environment.
+In today’s cybersecurity landscape, ensuring a secure network architecture is critical to protect against internal and external threats. Common vulnerabilities, such as data breaches, man-in-the-middle (MITM) attacks, and unauthorized access, necessitate a multi-layered defense approach. This network design prioritizes security by implementing VLAN segmentation, ACLs, and RADIUS authentication, providing robust protection while maintaining performance and scalability.
 
-**Project Goals**:
-- Set up and configure a server and workstation on Linux
-- Configure DHCP, DNS, and Samba for network services
-- Demonstrate a secure environment with automated backups
+1. VLAN Segmentation:
+The network is divided into multiple VLANs, each assigned to a specific sector. This segmentation reduces broadcast traffic, improves performance, and enhances security by isolating sensitive data between departments.
 
-## Table of Contents
-1. [Installation Requirements](#installation-requirements)
-2. [Project Structure](#project-structure)
-3. [Quick Setup Guide](#quick-setup-guide)
-4. [Detailed Documentation](#detailed-documentation)
-5. [Testing and Verification](#testing-and-verification)
+2. Inter-VLAN Routing:
+Layer 3 switches were used to enable communication between VLANs while keeping traffic flows under control. This allows efficient routing without needing additional hardware, reducing overall costs.
 
-## Installation Requirements
-- **Operating Systems**: Ubuntu Server, Ubuntu Desktop
-- **Virtualization Software**: VMware Fusion (or any other)
-- **Access Tools**: SSH client, VNC client (optional)
+3. IP Addressing & Subnetting:
+The IP addressing scheme is designed with subnetting principles in mind, assigning distinct ranges for each VLAN to facilitate better organization and reduce management complexity. Dynamic addressing is handled via a centralized DHCP server.
 
-## Project Structure
-- **documentation/**: Detailed step-by-step setup guides
-- **scripts/**: Automation scripts, e.g., backup script for cron job
-- **assets/**: Images or screenshots (optional)
+4. Security Measures:
+The network architecture implements strict security protocols, including Access Control Lists (ACLs) and RADIUS-based centralized authentication to ensure sensitive areas of the network are protected. Additional measures, such as strong password policies and encryption, further secure the infrastructure.
 
-## Quick Setup Guide
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/linux_client_server.git
-   cd linux_client_server
+5. Cost Efficiency:
+The overall cost of the network, amounting to €38,900, was kept within budget without sacrificing performance or security. Key components, such as Layer 3 switches and virtualized servers for DNS and DHCP, were chosen based on their ability to balance cost-effectiveness with high functionality.
+
+6. Scalability and Flexibility:
+The architecture is designed to be scalable, allowing new departments or sectors to be added with minimal reconfiguration. The modular use of VLANs and Layer 3 routing ensures future growth can be supported without major overhauls.
+
+This repository contains all the documentation and simulation files needed to replicate or modify the network. The presentation included in the repository outlines the design process, key decisions made, and the trade-offs considered for security, efficiency, and budget adherence.
