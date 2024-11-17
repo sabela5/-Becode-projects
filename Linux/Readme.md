@@ -5,6 +5,12 @@ As part of this initiative, our team has been tasked with setting up a demonstra
 ### **Project Goals**
 - Set up a robust Linux infrastructure.
 - Deliver a live demonstration showcasing the setup.
+- 
+### **Prerequisites**
+- Linux distributions for the server and workstation.
+- VirtualBox for creating virtual machines.
+- Internal virtual network to isolate the demo environment.
+
 
 ## Must-Have Features
 
