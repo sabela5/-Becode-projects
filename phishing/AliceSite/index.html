@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Alice!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome, Alice!</h1>
+    <img src="https://media1.tenor.com/m/XT94KL1M7qUAAAAd/workshopsfriend-meisteramwerk.gif" alt="Vintage Car">
+    <p>Login to view your car collection.</p>
+    <form action="http://localhost:5000/webhook" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
 
