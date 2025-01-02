@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 5px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
