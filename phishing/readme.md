@@ -1,6 +1,7 @@
-https://media1.tenor.com/m/XT94KL1M7qUAAAAd/workshopsfriend-meisteramwerk.gif
 
 
+
+![Lets do it](https://github.com/user-attachments/assets/407a6ca6-84d2-4869-9928-8fb3bfe34486)
 
 ## Phishing Simulation Project
 
