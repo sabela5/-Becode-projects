@@ -1,5 +1,5 @@
 
-Exercise
+## Exercise
 Friend Bot - Your Friendly Bash Script Companion
 A friendly shell script that can perform various tasks, including telling jokes, displaying the current time, performing simple calculations, and fetching the weather. Using both both an **interactive** and **non-interactive** interface.
 ### **Usage** 
